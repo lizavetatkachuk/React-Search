@@ -9,6 +9,7 @@ class SearchExample extends Component {
         this.state = {
             searchString: ''
         }
+        this.handleChange=this.handleChange.bind(this);
     };
     handleChange (e){
         this.setState(state => ({searchString:e.target.value}));
